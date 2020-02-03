@@ -36,7 +36,7 @@ $(document).ready(function() {
     $('.cd').hide();
 
     $('.cd').each(function() {
-      var genereCd = $(this).attr('value');
+      var genereCd = $(this).attr('data-value');
       if (genereCd == selezioneGenere) {
         $(this).show();
       };
@@ -52,18 +52,11 @@ $(document).ready(function() {
     $('.cd').hide();
 
     $('.cd').each(function() {
-      var genereCd = $(this).attr('value');
+      var genereCd = $(this).attr('data-value');
       if (genereCd == selezioneGenere) {
         $(this).show();
       };
     });
-
-    // for (var i = 0; i < libreriaCd.length; i++) {
-    //   if (genereCd == selezioneGenere) {
-    //       $(this).show();
-    //     };
-    // }
-
   });
 
 });
